@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb; /* Light gray background */
+    margin: 0;
+    padding: 2rem; /* Increased padding */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff; /* White background */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Shadow effect */
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+}
+
+h1, h2 {
+    color: #374151; /* Dark gray text */
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600; /* Semi-bold font */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500; /* Medium font weight */
+    color: #4b5563; /* Gray text */
+    font-size: 0.875rem; /* Text size */
+}
+
+input[type="text"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 0.75rem; /* Padding */
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db; /* Light gray border */
+    border-radius: 0.375rem; /* Rounded corners */
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #6366f1; /* Indigo focus border */
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25); /* Focus shadow */
+}
+
+button {
+    background-color: #6366f1; /* Indigo background */
+    color: #ffffff; /* White text */
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 1rem;
+    transition: background-color 0.15s ease-in-out;
+}
+
+button:hover {
+    background-color: #4f46e5; /* Darker indigo hover */
+}
+
+#errorMessages {
+    color: #ef4444; /* Red error text */
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#questionScreen,
+#feedbackScreen,
+#resultsScreen,
+#startScreen {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+#answerList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.25rem;
+}
+
+#answerList li {
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #e5e7eb; /* Light border */
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+#answerList li:hover {
+    background-color: #f3f4f6; /* Light hover background */
+}
+
+#answerList li.selected {
+    background-color: #e0f2fe; /* Light blue selected background */
+    border-color: #38b2ac; /* Teal selected border */
+}
+
+#teamButtons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+#teamButtons button {
+    width: 45%;
+    background-color: #3b82f6; /* Blue team button */
+}
+
+#teamButtons button:nth-child(2) {
+    background-color: #10b981; /* Green team button */
+}
+
+#teamButtons button:hover {
+    filter: brightness(90%);
+}
+
+#tagline {
+    text-align: center;
+}
+
+#scoreDisplay {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+#feedbackImage {
+    max-width: 150px;
+    display: block;
+    margin: 1rem auto;
+}
+
+

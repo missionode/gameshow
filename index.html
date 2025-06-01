@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Show Setup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Game Show Setup</h1>
+        <form id="setupForm">
+            <label for="gameName">Game Name:</label>
+            <input type="text" id="gameName" value="Super Quiz" required><br><br>
+        
+            <label for="tagline">Tagline:</label>
+            <input type="text" id="tagline" value="Get Set Quiz" required><br><br>
+        
+            <label for="team1Name">Team 1 Name:</label>
+            <input type="text" id="team1Name" value="Champions" required><br><br>
+        
+            <label for="team2Name">Team 2 Name:</label>
+            <input type="text" id="team2Name" value="Royals" required><br><br>
+        
+            <label for="questionFile">Upload CSV File:</label>
+            <input type="file" id="questionFile" accept=".csv" required><br><br>
+        
+            <label for="numRounds">Number of Rounds:</label>
+            <select id="numRounds"></select><br><br>
+        
+            <button type="submit">Start Game</button>
+            <p id="errorMessages" style="color: red;"></p>
+        </form>
+
+        <div id="errorMessages" class="error"></div>
+        <button id="resetButton">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById('setupForm').addEventListener('submit', handleSetup);
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Show</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="gameTitle"></h1>
+        <p id="tagline"></p>
+
+        <div id="startScreen">
+            <button id="startButton">Start Game</button>
+        </div>
+
+        <div id="questionScreen" style="display: none;">
+            <h2 id="questionText"></h2>
+            <ul id="answerList"></ul>
+            <div id="teamButtons">
+                <button id="team1Button"></button>
+                <button id="team2Button"></button>
+            </div>
+        </div>
+
+        <div id="feedbackScreen" style="display: none;">
+            <p id="feedbackMessage"></p>
+            <img id="feedbackImage" src="" alt="">
+            <button id="nextQuestionButton">Next Question</button>
+        </div>
+
+        <div id="scoreDisplay">
+            <p id="team1Score"></p>
+            <p id="team2Score"></p>
+        </div>
+
+        <div id="resultsScreen" style="display: none;">
+            <h2 id="winner"></h2>
+            <button id="nextRoundButton">Next Round</button>
+            <p id="finalGameMessage" style="display: none;">Game Show Finished!</p>
+        </div>
+
+        <audio id="correctSound" src="./audio/correct.mp3"></audio>
+        <audio id="incorrectSound" src="./audio/incorrect.mp3"></audio>
+        <audio id="suspenseSound" src="./audio//suspense.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('startButton').addEventListener('click', startGame);
+    </script>
+</body>
+</html>
+
